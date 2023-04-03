@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Thanks for completing this survey!</h1>
+<button id="newSurvey" class="newSurvey">Start Survey Over!</button>
+<script type="text/javascript">
+    document.getElementById("newSurvey").onclick = function () {
+        location.href = "http://127.0.0.1:5000/";
+    };
+</script>
+{% endblock %}
